@@ -8,13 +8,30 @@ for i in range(numberOfProcesses):
 
 
 schedulingPolicies = SchedulingPolicies(processes)
-print('FCFS:', schedulingPolicies.firstComeFirstServe())
-print('SJF: ', schedulingPolicies.shortestJobFirst())
-print('Priority: ', schedulingPolicies.priority())
-print('Round Robin: ', schedulingPolicies.roundRobin(3))
+print('------\nFCFS:')
+schedulingPolicies.firstComeFirstServe()
+print('------')
+print('SJF:')
+schedulingPolicies.shortestJobFirst()
+print('------')
+print('Priority:')
+schedulingPolicies.priority()
+print('------')
+print('Round Robin:')
+schedulingPolicies.roundRobin(3)
+print('------')
+
+
 
 # 4
 # 2 5 1
 # 2 2 4
 # 0 2 2
 # 1 4 3
+
+# 4
+# 2 5 1
+# 2 2 4
+# 0 2 2
+# 1 20 3
+
